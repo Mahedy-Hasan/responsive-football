@@ -204,17 +204,33 @@ height: 300px;
 
 /* media query responsibity */
 
-@media only screen and (max-width:1024) {
+@media only screen and (min-width:580px) and (max-width:1024) {
 
     .container{
         width: 100%;
     }
+
+    
     .flexible-content{
-        width: 10%;
         grid-template-columns: repeat(1,1fr);
+    }
+
+    .container{
+        width: 100%;
     }
 
 .blog{
     grid-template-columns: repeat(1,fr);
+}
+.pro-players{
+    grid-template-columns: repeat(1,1fr);
+}
+.final-match{
+    grid-template-columns: repeat(1,1fr);
+}
+.last-content{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(1,1fr);
 }
 }
